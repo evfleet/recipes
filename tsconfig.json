@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "sourceMap": true,
+    "jsx": "preserve",
+    "strict": true
+  },
+  "exclude": [
+    "node_modules" // don't run on any code in the node_modules directory
+  ]
+}
