@@ -1,4 +1,4 @@
-import { all, call, fork, take } from "redux-saga/effects";
+import { all, fork, take } from "redux-saga/effects";
 
 import { LogoutAction } from "./types";
 
