@@ -3,6 +3,7 @@
   "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
     "interface-name": false,
+    "no-console": false,
     "ordered-imports": false,
     "object-literal-sort-keys": false
   }

@@ -4,10 +4,8 @@ import { LogoutAction } from "./types";
 
 function* logout() {
   try {
-    // tslint:disable-next-line
     console.log("logout");
   } catch (error) {
-    // tslint:disable-next-line
     console.log(error);
   }
 

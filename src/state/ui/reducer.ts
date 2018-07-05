@@ -13,7 +13,13 @@ const initialState: UIState = {
 const uiReducer: Reducer<UIState> = (state: UIState = initialState, action) => {
   switch ((action as UIActions).type) {
     case "ui/UPDATE_DIMENSIONS":
-      return state;
+      return {
+        ...state,
+        dimensions: {
+          width: action.payload.width,
+          height: action.payload.height
+        }
+      };
 
     default:
       return state;
