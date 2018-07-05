@@ -1,9 +1,12 @@
 import * as React from "react";
 import { connect } from "react-redux";
+import { Route, Switch } from "react-router-dom";
 
 import { AppState } from "../../state/store";
 import { AuthState } from "../../state/auth";
 import { uiActions, UIState } from "../../state/ui";
+
+import Landing from "../../screens/Landing";
 
 interface StateProps {
   auth: AuthState;
@@ -41,7 +44,11 @@ class Root extends React.Component<StateProps & ActionProps> {
       return <div>Loading</div>;
     }
 
-    return <div>Hello World</div>;
+    return (
+      <Switch>
+        <Route path="/" component={Landing} />
+      </Switch>
+    );
   }
 }
 
